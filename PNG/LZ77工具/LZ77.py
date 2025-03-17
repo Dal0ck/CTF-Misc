@@ -53,7 +53,7 @@ def checkIfQRCode(DecompressedData, lenth, Output_PATH):
         for i in range(side):
             for j in range(side):
                 if DecompressedData[i * side + j] == '1':
-                    pixels[j, i] = 255
+                    pixels[j, i] = 1
                 else:
                     pixels[j, i] = 0
             #     print(pixels[j, i]," ", end="")
